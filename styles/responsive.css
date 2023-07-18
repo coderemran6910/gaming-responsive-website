@@ -1,0 +1,156 @@
+
+
+/* CSS for large mobile devices */
+@media screen and (max-width: 767px) {
+    /* Header related css */
+  
+  
+    .nabvar{
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+    }
+    .logo{
+      width: 100%;
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+    .nabvar .logo h1 {
+      font-size: 2rem;
+    }
+  
+    /* .nabvar .menu ul {
+      display: none;
+    } */
+    .nabvar .menu ul{
+      flex-direction: column;
+      gap: .5rem;
+    }
+    .nabvar .menu ul li a {
+      font-size: 0.9rem;
+    }
+  
+    .nabvar .menu ul li .menu-btn {
+      width: auto;
+      padding: 0 1rem;
+    }
+  
+    /* Banner related css */
+    .banner  {
+      flex-direction: column-reverse;
+      padding: 0;
+      max-width: 100%;
+    }
+    .banner-contant{
+      margin-top: 3rem;
+      width: 60%;
+    }
+    .banner-image{
+      width: 80%;
+    }
+  
+    .banner-contant .sub-title {
+      font-size: 2rem;
+    }
+  
+    h1.title {
+      font-size: 4rem;
+    }
+  
+    .banner-contant ul {
+      font-size: 0.9rem;
+    }
+    .banner-btn .btn-primary{
+      margin-right: 1rem;
+    }
+    .banner-btn .btn-primary,
+    .banner-btn .btn-secondary {
+      padding: 15px 30px;
+      text-align: center;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* media query for tablet devices */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+      /* Header related css */
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .logo {
+        width: 100%;
+        margin-bottom: 1rem;
+        justify-content: center;
+      }
+    
+      .navbar .logo h1 {
+        font-size: 2rem;
+      }
+    
+      .navbar .menu ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    
+      .navbar .menu ul li a {
+        font-size: 0.9rem;
+      }
+    
+      .nabvar .menu ul li .menu-btn{
+        padding: 0 1rem;
+        width: 8rem;
+      }
+    
+    
+      /* Banner related css */
+      .banner {
+        flex-direction: column-reverse;
+        padding: 0;
+        max-width: 100%;
+      }
+    
+      .banner-content {
+        margin-top: 3rem;
+        width: 60%;
+      }
+    
+      .banner-image {
+        width: 80%;
+      }
+    
+      .banner-content .sub-title {
+        font-size: 2rem;
+      }
+    
+      h1.title {
+        font-size: 4rem;
+      }
+    
+      .banner-content ul {
+        font-size: 0.9rem;
+      }
+    
+      .banner-btn .btn-primary {
+        margin-right: 1rem;
+      }
+    
+      .banner-btn .btn-primary,
+      .banner-btn .btn-secondary {
+        padding: 15px 30px;
+        text-align: center;
+      }
+    }
+  

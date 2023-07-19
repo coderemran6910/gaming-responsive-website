@@ -231,3 +231,52 @@ h1.banner-title {
     bottom: -30rem;
     left: -8rem;
 }
+
+/* hover-btn section css code   */
+
+.hover-btn-section {
+    width: 80%;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hover-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    flex-basis: 12rem;
+    padding: 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    transition: border-color 0.5s ease;
+    cursor: pointer;
+}
+
+.hover-btn img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.hover-btn h3 {
+    width: 7rem;
+    color: #0B0223;
+    font-size: .9rem;
+    font-weight: 600;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.hover-btn:hover {
+    border: 1px solid #FF42A5;
+    border-radius: 50px;
+    transition: border 0.3s ease;
+}
+
+.hover-btn:hover h3 {
+    color: #FF42A5;
+}

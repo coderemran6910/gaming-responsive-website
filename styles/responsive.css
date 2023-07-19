@@ -10,7 +10,7 @@
     }
 
     .logo {
-        width: 100%;
+        width: 64%;
         margin-bottom: 1rem;
         justify-content: center;
     }
@@ -18,11 +18,10 @@
     .nabvar .logo h1 {
         font-size: 2rem;
     }
-
-    /* .nabvar .menu ul {
-      display: none;
-    } */
-    .nabvar .menu ul {
+    .menu{
+        flex-direction: column;
+    }
+   .menu ul {
         flex-direction: column;
         gap: .5rem;
     }
@@ -157,6 +156,47 @@
         transition: color 0.3s ease;
     }
 
+    /* Footer responsive code  */
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+    .footer-logo img {
+        width: 20%;
+    }
+    
+    .footer-menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: .6rem;
+        justify-content: center;
+        row-gap: 1rem;
+        column-gap: 0;
+    }
+    
+   
+    .footer-menu ul li {
+        font-size: .8rem;
+        margin-right: 0;
+    }
+    
+    .footer-gray-menu ul li {
+        font-size: 0.8rem;
+    }
+    .fab, .fa-youtube{
+        margin: .5rem 0;
+        color: white;
+        font-size: 2rem;
+    }
+    .copyright-text{
+        font-size: .8rem;
+    }
+
 
 
 }
@@ -279,6 +319,43 @@
         position: relative;
         bottom: -8rem;
         left: 1rem;
+    }
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+    .footer-logo img {
+        width: 20%;
+    }
+    
+    .footer-menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: .6rem;
+        justify-content: center;
+        row-gap: 1rem;
+        column-gap: 0;
+    }
+    .footer-icons ul li{
+    }
+   
+    .footer-menu ul li {
+        font-size: .8rem;
+        margin-right: 0;
+    }
+    
+    .footer-gray-menu ul li {
+        font-size: 0.8rem;
+    }
+    .fab, .fa-youtube{
+        margin: .5rem 0;
+        color: white;
+        font-size: 2rem;
     }
 
 }

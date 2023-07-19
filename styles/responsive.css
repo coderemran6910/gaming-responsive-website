@@ -196,6 +196,11 @@
     .copyright-text{
         font-size: .8rem;
     }
+    .footer-gray-menu ul{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+    }
+    
 
 
 
@@ -354,7 +359,8 @@
         font-size: .8rem;
         margin-right: 0;
     }
-    
+
+   
     .footer-gray-menu ul li {
         font-size: 0.8rem;
     }

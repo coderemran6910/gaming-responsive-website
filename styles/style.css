@@ -97,18 +97,33 @@ i.fab.fa-youtube {
     font-size: 1rem;
     font-weight: 500;
 }
-.menu-btn-wrapper{
-    width: auto;
-}
 
-.menu-btn {
-    width: 15rem;
+
+button.menu-btn {
+    width: 262px;
+    height: 56px;
+    background-color: rgba(11, 2, 35, 0.10);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 8px; 
     border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
-    border: 0;
-    text-transform: capitalize;
-    text-align: center;
-}
+  }
+  button.menu-btn:hover {
+    background-color: rgba(11, 2, 35, 0.15);
+  }
+  button.menu-btn svg {
+    width: 20px; 
+    height: 20px; 
+    fill: #fff; 
+    margin-right: 8px; 
+  }
 
 /* Banner related css */
 .banner {
@@ -206,37 +221,6 @@ h1.banner-title {
 .online-games-card img {
     width: 100%;
 }
-
-
-/* 
-.online-games-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.online-games-card img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.online-games-card:hover img {
-    transform: scale(1.1);
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 10rem;
-    color: rgb(0, 0, 0);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.online-games-card:hover .play-icon {
-    opacity: 1;
-}
- */
  .online-games-card {
     position: relative;
     overflow: hidden;

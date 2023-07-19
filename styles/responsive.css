@@ -209,14 +209,14 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* Header related css */
-    .navbar {
+     .nabvar {
         flex-direction: column;
         text-align: center;
         justify-content: center;
     }
 
     .logo {
-        width: 100%;
+        width: 40%;
         margin-bottom: 1rem;
         justify-content: center;
     }
@@ -278,6 +278,12 @@
         text-align: center;
     }
 
+/*  */
+
+
+    .hover-btn-section {
+        margin-top: 3rem;
+    }
     /* online-games-section related RESPONSIVE css  */
     .online-games-section {
         margin-top: 2rem;

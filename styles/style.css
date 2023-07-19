@@ -165,9 +165,11 @@ h1.banner-title {
 }
 
 /* online-games-section related css */
-.online-games-section{
+.online-games-section {
     margin-top: 3rem;
+    padding-bottom: 3rem;
 }
+
 .online-games-items {
     margin-top: 2rem;
     display: grid;
@@ -182,4 +184,50 @@ h1.banner-title {
 
 .online-games-card img {
     width: 100%;
+}
+
+/* play-instantly-section related css */
+.play-instantly-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.play-instantly-content {
+    width: 36%;
+    margin-right: 10rem;
+}
+
+.play-instantly-img {
+    width: 30%;
+}
+
+.play-instantly-content>h1 {
+    text-align: right;
+}
+
+.play-instantly-content>p {
+    text-align: right;
+}
+
+.play-instantly-img {
+    width: 39rem;
+    height: 40rem;
+    flex-shrink: 0;
+    background-image: url("../images/Rectangle 55.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.play-instantly-img img {
+    width: 16rem;
+    height: 18rem;
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    position: relative;
+    bottom: -30rem;
+    left: -8rem;
 }

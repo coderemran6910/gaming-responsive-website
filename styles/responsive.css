@@ -78,22 +78,54 @@
     .online-games-section {
         margin-top: 3rem;
     }
-    .title{
+
+    .title {
         font-size: 1.5rem;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: .7rem;
     }
+
     .online-games-items {
         margin-top: 2rem;
-        display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .online-games-card {
-        border-radius: 16px;
-        padding: 1rem 0.5rem;
+    /* Play instant section responsive code */
+    .play-instantly-section {
+        flex-direction: column;
+    }
+
+    .play-instantly-content {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .play-instantly-content>h1,
+    .play-instantly-content>p {
+        text-align: center;
+    }
+
+    .play-instantly-img {
+        width: 23rem;
+        height: 13rem;
+        background-image: url("../images/Rectangle 55.png");
+        margin-left: 4rem;
+        margin-top: 1rem;
+        background-size: contain;
+    }
+
+    .play-instantly-img img {
+        width: 7rem;
+        height: 9rem;
+        border-radius: 8px;
+        border: 3px solid #FFF;
+        position: relative;
+        bottom: -8rem;
+        left: 1rem;
     }
 
 
@@ -175,4 +207,47 @@
         padding: 15px 30px;
         text-align: center;
     }
+
+    /* online-games-section related RESPONSIVE css  */
+    .online-games-section {
+        margin-top: 2rem;
+    }
+
+    .online-games-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Play instant responsive css  */
+    .play-instantly-section {
+        flex-direction: column-reverse;
+    }
+    .play-instantly-content>h1,
+    .play-instantly-content>p {
+        text-align: center;
+    }
+    .play-instantly-content {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+
+    .play-instantly-img {
+        width: 23rem;
+        height: 13rem;
+        background-image: url("../images/Rectangle 55.png");
+        margin-left: 4rem;
+        margin-top: 3rem;
+        background-size: contain;
+    }
+
+    .play-instantly-img img {
+        width: 7rem;
+        height: 9rem;
+        border-radius: 8px;
+        border: 3px solid #FFF;
+        position: relative;
+        bottom: -8rem;
+        left: 1rem;
+    }
+
 }

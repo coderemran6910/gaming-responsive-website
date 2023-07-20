@@ -68,7 +68,7 @@
     padding: 20px;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,18 +112,20 @@ button.menu-btn {
     font-size: 16px;
     font-weight: bold;
     color: #000;
-    margin-right: 8px; 
+    margin-right: 8px;
     border-radius: 8px;
-  }
-  button.menu-btn:hover {
+}
+
+button.menu-btn:hover {
     background-color: rgba(11, 2, 35, 0.15);
-  }
-  button.menu-btn svg {
-    width: 20px; 
-    height: 20px; 
-    fill: #fff; 
-    margin-right: 8px; 
-  }
+}
+
+button.menu-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-right: 8px;
+}
 
 /* Banner related css */
 .banner {
@@ -150,7 +152,7 @@ button.menu-btn {
     text-transform: uppercase;
 }
 
-h1.banner-title {
+.banner-title {
     font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -177,18 +179,23 @@ h1.banner-title {
     margin-top: 1.5rem;
 }
 
-.banner-btn .btn-primary {
+.btn-primary {
     padding: 21px 40px;
     border-radius: 48px;
     background: #FF42A5;
     border: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: wheat;
 }
-
-.banner-btn .btn-secondary {
+.btn-secondary {
     padding: 21px 40px;
     border-radius: 48px;
     background: #4EC5F7;
     border: 0;
+    text-transform:  uppercase;
+    font-weight: 500;
+    color: white;
 }
 
 .banner-image {
@@ -198,6 +205,59 @@ h1.banner-title {
 .banner-image img {
     width: 100%;
 }
+
+/* we-are-gamer-section releted css  */
+.we-are-gamer-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+
+}
+
+.we-are-gamer-img {
+    width: 100%;
+}
+
+.we-are-gamer-img img {
+    width: 100%;
+}
+
+.gammer-title {
+    font-size: 3rem;
+}
+
+.gamer-sub-title {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+.we-are-gammer-content {
+    text-align: right;
+}
+.we-are-gammer-content span {
+    display: block;
+    color: #534C64;
+    text-align: right;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem;
+}
+.title2 {
+    color: #0B0223;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
 
 /* online-games-section related css */
 
@@ -220,12 +280,20 @@ h1.banner-title {
 
 .online-games-card img {
     width: 100%;
+
 }
- .online-games-card {
+
+.online-games-card img:hover {
+    border: 0.4rem solid #FF42A5;
+    border-radius: 1.2rem;
+}
+
+.online-games-card {
     position: relative;
     overflow: hidden;
     cursor: pointer;
 }
+
 .play-icon {
     position: absolute;
     top: 45%;
@@ -237,7 +305,24 @@ h1.banner-title {
     transition: opacity 0.3s ease-in-out;
     font-size: 5rem;
 }
+
+.hover-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FF42A5;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 1.3rem;
+}
+
 .online-games-card:hover .play-icon {
+    opacity: 1;
+}
+
+.online-games-card:hover .hover-text {
     opacity: 1;
 }
 
@@ -249,14 +334,17 @@ h1.banner-title {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value to control the darkness */
-    opacity: 0; /* Initially set to 0 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Change the alpha value to control the darkness */
+    opacity: 0;
+    /* Initially set to 0 */
     transition: opacity 0.3s ease-in-out;
 }
 
 .online-games-card:hover::before {
-    opacity: 1; /* Show the overlay on hover */
+    opacity: 1;
 }
+
 
 
 
@@ -266,6 +354,15 @@ h1.banner-title {
     align-items: center;
     justify-content: space-between;
     margin-top: 3rem;
+    margin-bottom: 12rem;
+}
+
+.play-instantly-section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
 }
 
 .play-instantly-content {
@@ -273,9 +370,38 @@ h1.banner-title {
     margin-right: 10rem;
 }
 
-.play-instantly-img {
+
+
+.play-instantly-content2 {
+    width: 36%;
+    text-align: right;
+}
+
+.play-instantly-img,
+.play-instantly-img2 {
     width: 30%;
 }
+
+.play-instantly-content2 h1 {
+    width: 100%;
+    text-align: right;
+}
+
+.play-instantly-content2 p {
+    text-align: right;
+}
+
+.play-instantly-img2 img {
+    width: 16rem;
+    height: 18rem;
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    position: relative;
+    bottom: -30rem;
+    right: -31rem;
+}
+
+
 
 .play-instantly-content>h1 {
     text-align: right;
@@ -296,6 +422,17 @@ h1.banner-title {
     border-radius: 16px;
 }
 
+.play-instantly-img2 {
+    width: 39rem;
+    height: 40rem;
+    flex-shrink: 0;
+    background-image: url("../images/Rectangle 67.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
 .play-instantly-img img {
     width: 16rem;
     height: 18rem;
@@ -304,6 +441,16 @@ h1.banner-title {
     position: relative;
     bottom: -30rem;
     left: -8rem;
+}
+
+.play-instantly-img2 img {
+    width: 16rem;
+    height: 18rem;
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    position: relative;
+    bottom: -30rem;
+    right: -31rem;
 }
 
 /* hover-btn section css code   */
@@ -361,7 +508,9 @@ h1.banner-title {
     height: 70vh;
     display: flex;
     align-items: center;
+    padding-top: 7rem;
     justify-content: center;
+    padding-bottom: 5rem;
 }
 
 .footer-logo {
@@ -402,7 +551,9 @@ h1.banner-title {
     font-weight: 500;
     margin-top: 4rem;
 }
-.fab, .fa-youtube{
+
+.fab,
+.fa-youtube {
     margin: 3rem 0;
     color: white;
     font-size: 3rem;

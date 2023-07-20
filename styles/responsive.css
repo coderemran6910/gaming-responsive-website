@@ -18,10 +18,12 @@
     .nabvar .logo h1 {
         font-size: 2rem;
     }
-    .menu{
+
+    .menu {
         flex-direction: column;
     }
-   .menu ul {
+
+    .menu ul {
         flex-direction: column;
         gap: .5rem;
     }
@@ -45,6 +47,7 @@
     .banner-contant {
         margin-top: 3rem;
         width: 60%;
+        text-align: center;
     }
 
     .banner-image {
@@ -69,7 +72,8 @@
 
     .banner-btn .btn-primary,
     .banner-btn .btn-secondary {
-        padding: 15px 30px;
+        padding: 15px 27px;
+        margin-bottom: 0rem;
         text-align: center;
     }
 
@@ -95,9 +99,17 @@
     /* Play instant section responsive code */
     .play-instantly-section {
         flex-direction: column;
+        margin-bottom: 5rem;
+        margin-top: 0;
     }
 
-    .play-instantly-content {
+    .play-instantly-section2 {
+        flex-direction: column-reverse;
+        margin-bottom: 5rem;
+    }
+
+    .play-instantly-content,
+    .play-instantly-content2 {
         width: 100%;
         margin-right: 0;
         text-align: center;
@@ -108,7 +120,16 @@
         text-align: center;
     }
 
-    .play-instantly-img {
+    .play-instantly-content2>h1{
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+ .play-instantly-content2>p{
+    text-align: center;
+ }
+    .play-instantly-img,
+    .play-instantly-img2 {
         width: 23rem;
         height: 13rem;
         margin-left: 4rem;
@@ -116,7 +137,8 @@
         background-size: contain;
     }
 
-    .play-instantly-img img {
+    .play-instantly-img img,
+    .play-instantly-img2 img {
         width: 7rem;
         height: 9rem;
         border-radius: 8px;
@@ -160,16 +182,17 @@
     .footer {
         flex-direction: column;
         height: auto;
-        padding: 2rem;
+        padding: 5rem 0;
     }
-    
+
     .footer-logo {
         margin-bottom: 1rem;
     }
+
     .footer-logo img {
         width: 20%;
     }
-    
+
     .footer-menu ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -178,29 +201,46 @@
         row-gap: 1rem;
         column-gap: 0;
     }
-    
-   
+
+
     .footer-menu ul li {
         font-size: .8rem;
         margin-right: 0;
     }
-    
+
     .footer-gray-menu ul li {
         font-size: 0.8rem;
     }
-    .fab, .fa-youtube{
+
+    .fab,
+    .fa-youtube {
         margin: .5rem 0;
         color: white;
         font-size: 2rem;
     }
-    .copyright-text{
+
+    .copyright-text {
         font-size: .8rem;
     }
-    .footer-gray-menu ul{
+
+    .footer-gray-menu ul {
         display: grid;
-        grid-template-columns: repeat(4 , 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
-    
+
+    /* we-are-gamer-section releted responsive css */
+    .we-are-gamer-section{
+        grid-template-columns: 1fr;
+    }
+    .we-are-gammer-content{
+        text-align: center;
+    }
+    .gamer-sub-title{
+        text-align: center;
+    }
+    .we-are-gammer-content span, .title2{
+        text-align: center;
+    }
 
 
 
@@ -214,7 +254,7 @@
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
     /* Header related css */
-     .nabvar {
+    .nabvar {
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -283,12 +323,13 @@
         text-align: center;
     }
 
-/*  */
+    /*  */
 
 
     .hover-btn-section {
         margin-top: 3rem;
     }
+
     /* online-games-section related RESPONSIVE css  */
     .online-games-section {
         margin-top: 2rem;
@@ -300,7 +341,21 @@
 
     /* Play instant responsive css  */
     .play-instantly-section {
+        flex-direction: column;
+        margin-bottom: 5rem;
+        margin-top: 0;
+    }
+
+    .play-instantly-section2 {
         flex-direction: column-reverse;
+        margin-bottom: 5rem;
+    }
+
+    .play-instantly-content,
+    .play-instantly-content2 {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
     }
 
     .play-instantly-content>h1,
@@ -308,21 +363,25 @@
         text-align: center;
     }
 
-    .play-instantly-content {
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 6rem;
+    .play-instantly-content2>h1{
+        text-align: center;
+        margin-top: 5rem;
     }
 
-    .play-instantly-img {
+ .play-instantly-content2>p{
+    text-align: center;
+ }
+    .play-instantly-img,
+    .play-instantly-img2 {
         width: 23rem;
         height: 13rem;
         margin-left: 4rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
         background-size: contain;
     }
 
-    .play-instantly-img img {
+    .play-instantly-img img,
+    .play-instantly-img2 img {
         width: 7rem;
         height: 9rem;
         border-radius: 8px;
@@ -331,19 +390,22 @@
         bottom: -8rem;
         left: 1rem;
     }
+
+
     .footer {
+        padding-top: 5rem 2rem;
         flex-direction: column;
         height: auto;
-        padding: 2rem;
     }
-    
+
     .footer-logo {
         margin-bottom: 1rem;
     }
+
     .footer-logo img {
         width: 20%;
     }
-    
+
     .footer-menu ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -352,22 +414,37 @@
         row-gap: 1rem;
         column-gap: 0;
     }
-    .footer-icons ul li{
-    }
-   
+
+    .footer-icons ul li {}
+
     .footer-menu ul li {
         font-size: .8rem;
         margin-right: 0;
     }
 
-   
+
     .footer-gray-menu ul li {
         font-size: 0.8rem;
     }
-    .fab, .fa-youtube{
+
+    .fab,
+    .fa-youtube {
         margin: .5rem 0;
         color: white;
         font-size: 2rem;
+    }
+    /* we-are-gamer-section responsive css */
+    .we-are-gamer-section{
+        grid-template-columns: 1fr;
+    }
+    .we-are-gammer-content{
+        text-align: center;
+    }
+    .gamer-sub-title{
+        text-align: center;
+    }
+    .we-are-gammer-content span, .title2{
+        text-align: center;
     }
 
 }
